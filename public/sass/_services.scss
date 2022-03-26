@@ -1,0 +1,272 @@
+.services-num{
+    background-color: $color-home-2;
+    position: relative;
+    z-index: -1;
+    height: 100%;
+   
+
+    .services-number{
+        height: 500px;
+        margin-top: 2rem;
+        position: relative;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+
+        .services-number-image{
+            position: absolute;
+            right: 0;
+
+        }
+
+        .number-card{
+            background: #00031b33;
+            backdrop-filter: blur(10px);
+            height: 250px;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            
+
+            .card{
+                width: 266.66px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .number{
+                    font-size: 16px;
+                    color: $color-green;
+                    font-family: 'poppins',sans-serif;
+                }
+
+                h2{
+                    margin-bottom: 0;
+                    margin-top: 10px;
+                    color: $color-white;
+                    font-family: 'poppins',sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+
+                }
+                
+                
+                svg{
+                    position: absolute;
+                    top: 30px;
+                    left: 50px;
+                    width: 160px !important;
+                    height: 160px !important;
+
+                    circle{
+                        fill: none;
+                        stroke: url(#GradientColor) ;
+                        stroke-width: 20px;
+                        stroke-dasharray: 472;
+                        stroke-dashoffset: 472;
+                        animation: animated 1.5s linear forwards;
+
+
+                        @keyframes animated {
+                            
+                            100%{
+                                stroke-dashoffset: 215;
+                            }
+                            
+                        }
+                      }
+                }
+
+                .other{
+                    box-shadow: rgba(5, 5, 5, 0.3) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px 2px 6px 2px;
+                     border-radius: 50%;
+                     width: 160px;
+                     height: 160px;
+                     padding: 20px;
+
+                     .inner{
+                           height: 120px;
+                           width: 120px;
+                           border: 1px solid $color-home-2;
+                           border-radius: 50%;
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+
+                           #number {
+                               font-family: 'poppins',sans-serif;
+                               font-size: 18px;
+                               color: $color-green;
+                           }
+                     }
+                }
+            }
+
+            #card2{
+                width: 266.66px;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .number{
+                    font-size: 16px;
+                    color: $color-green;
+                    font-family: 'poppins',sans-serif;
+                }
+
+                .other{
+                    box-shadow: rgba(5, 5, 5, 0.3) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px 2px 6px 2px;
+                     border-radius: 50%;
+                     width: 160px;
+                     height: 160px;
+                     padding: 20px;
+
+                     .inner{
+                           height: 120px;
+                           width: 120px;
+                           border: 1px solid $color-home-2;
+                           border-radius: 50%;
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+
+                           #number2 {
+                               font-family: 'poppins',sans-serif;
+                               font-size: 18px;
+                               color: $color-green;
+                           }
+                     }
+                }
+
+                h2{
+                    margin-bottom: 0;
+                    margin-top: 10px;
+                    color: $color-white;
+                    font-family: 'poppins',sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+
+                }
+
+                #svg2{
+                    position: absolute;
+                    top: 30px;
+
+                    
+
+                    #circle2{
+                        fill: none;
+                        stroke: url(#GradientColor) ;
+                        stroke-width: 20px;
+                        stroke-dasharray: 472;
+                        stroke-dashoffset: 472;
+                        animation: animed 1.5s linear forwards;
+
+
+                        @keyframes animed {
+                            
+                            100%{
+                                stroke-dashoffset: 180;
+                            }
+                            
+                        }
+                      }
+                      
+               
+                
+            }
+
+            }
+
+            .card3{
+                width: 266.66px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .number{
+                    font-size: 16px;
+                    color: $color-green;
+                    font-family: 'poppins',sans-serif;
+                }
+
+                h2{
+                    margin-bottom: 0;
+                    margin-top: 10px;
+                    color: $color-white;
+                    font-family: 'poppins',sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+
+                }
+
+                #svg3{
+                        position: absolute;
+                        top: 30px;
+
+                        
+    
+                        #circle3{
+                            fill: none;
+                            stroke: url(#GradientColor) ;
+                            stroke-width: 20px;
+                            stroke-dasharray: 472;
+                            stroke-dashoffset: 472;
+                            animation: animaed 1.5s linear forwards;
+    
+    
+                            @keyframes animaed {
+                                
+                                100%{
+                                    stroke-dashoffset: 100;
+                                }
+                                
+                            }
+                          }
+                    
+                }
+
+                .other{
+                    box-shadow: rgba(5, 5, 5, 0.3) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px 2px 6px 2px;
+                     border-radius: 50%;
+                     width: 160px;
+                     height: 160px;
+                     padding: 20px;
+
+                     .inner{
+                           height: 120px;
+                           width: 120px;
+                           border: 1px solid $color-home-2;
+                           border-radius: 50%;
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+
+                           #number3 {
+                               font-family: 'poppins',sans-serif;
+                               font-size: 18px;
+                               color: $color-green;
+
+                               .h3{
+                                text-align: center;  
+                                font-size: 18px;
+                                font-family: 'poppins',sans-serif;
+                                color: $color-green;
+                                font-weight: 500;
+                               }
+                           }
+                     }
+                }
+            }
+        }
+    }
+}

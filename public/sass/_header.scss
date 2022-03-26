@@ -1,0 +1,230 @@
+
+::-webkit-scrollbar{ width: 7px; background-color: $color-home-2}
+
+::-webkit-scrollbar-thumb{background-color: $color-green; border-radius: 6px; padding:0 0.5px;}
+    
+
+.header{
+
+    position: relative;
+    z-index: 70;
+    
+    nav{
+        padding: 20px 4rem;
+        position: fixed; 
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        
+        &.sticky{
+           padding: 5px 4rem;
+           backdrop-filter: blur(20px);
+           background:$color-home-2;
+        }
+        
+    }
+
+
+    &__links{
+        width: 100%;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+         
+
+     .logoooo{
+        .header__logo{
+            img{
+                width: 80px;
+                max-width: 100%;
+            }
+        }
+     }
+
+
+     .overlay{
+         display: none;
+     }
+      
+     ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        position: relative;
+    
+
+    li{
+        .nav-link{
+           color: $color-grey;
+           font-size: 15px;
+           font-weight: 600;
+           font-family: "poppins",sans-serif;
+            line-height: 20px;
+            padding: 0 10px 0 10px;
+            margin-right: 0 !important;
+            position: relative;
+
+            &:hover{
+                color: $color-white;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                height: 2px;
+                border-radius: 5px;
+                width: 0;
+                transition: .7s ;
+                background-color: $color-green;
+            }
+
+            &:hover::after{
+                width: 100%;
+            }
+        }
+     
+
+    }
+        }
+        button{
+   
+            border: none;
+            background-color: #6200ffe1;
+            width: 150px;
+            height: 40px;
+            box-shadow: -11.09px 18.13px 36.6483px rgba(133, 74, 242, 0.13);
+            border-radius: 50px;
+         
+            #button1{
+                font-family: 'Rubik', sans-serif;
+                color:$color-white;
+                font-weight: 500;
+                font-size: 15px;
+            }
+         }
+         .humburger-menu{
+             position: relative;
+             z-index: 1000;
+             height: 100%;
+             width: 2rem;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             cursor: pointer;
+             display: none;
+
+             .bar{
+                position: relative;
+                 width: 100%;
+                 height: 2px;
+                 background-color: $color-green;
+                 transition: .5s;
+                 border-radius: 3px;
+
+                 &::after , &::before{
+                      content: "";
+                      position: absolute;
+                      width: 100%;
+                      height: 100%;
+                      background-color: $color-green;
+                 }
+
+                 &::before{
+                     transform: translateY(-8px);
+                 }
+
+                 &::after{
+                    transform: translateY(8px);
+                }
+             }
+         }
+        
+      
+    }
+}
+
+nav.open .humburger-menu .bar {
+    background: transparent;
+}
+
+nav.open .humburger-menu .bar::before{
+    transform:translateY(0) rotate(-45deg);
+}
+
+nav.open  .humburger-menu .bar::after{
+    transform:translateY(0) rotate(45deg);
+}
+
+
+#list{
+    font-family: 'poppins';
+    color: $color-grey;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover{
+        color: $color-white;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        height: 2px;
+        border-radius: 5px;
+        width: 0;
+        transition: .7s ;
+        background-color: $color-green;
+    }
+
+    &:hover::after{
+        width: 100%;
+    }
+}
+
+
+#btnbackground{
+    position: absolute;
+    background-color: #040d46fb;
+    margin-top: 20px;
+    width: 200px;
+    height: 80px;
+    padding: 0;
+    border-top: 1px solid $color-green;
+    border-radius: 10px;
+
+    .li{
+        margin: 10px;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        height: 25px;
+        flex-direction: column;
+
+
+        .a{
+            padding: 0;
+            font-size: 14px;
+
+            &:hover{
+                color: $color-green;
+                border-bottom: 1px solid $color-green;
+            }
+        }
+    }
+    
+    
+}
+
+

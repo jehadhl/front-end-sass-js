@@ -1,0 +1,9 @@
+const scrollButton=document.querySelector(".scroll-to-top"),refrech=()=>{document.documentElement.scrollTop<=400?scrollButton.style.display="none":scrollButton.style.display="block"};refrech(),scrollButton.addEventListener("click",()=>{document.body.scrollTop=0,document.documentElement.scrollTop=0}),document.addEventListener("scroll",e=>{refrech()});let list=document.querySelectorAll(".list"),itemBox=document.querySelectorAll(".itembox");for(let e=0;e<list.length;e++)list[e].addEventListener("click",function(){for(let e=0;e<list.length;e++)list[e].classList.remove("active");this.classList.add("active");let e=this.getAttribute("data-filter");for(let t=0;t<itemBox.length;t++)itemBox[t].classList.add("hide"),itemBox[t].classList.remove("active"),itemBox[t].getAttribute("data-item")!=e&&"all"!=e||(itemBox[t].classList.add("active"),itemBox[t].classList.remove("hide"))});const hamburger_menu=document.querySelector(".humburger-menu"),navbar=document.querySelector("header nav"),links=document.querySelectorAll(".item a");function closeMenu(){navbar.classList.remove("open"),document.body.classList.remove("stop-scrolling")}hamburger_menu.addEventListener("click",()=>{navbar.classList.contains("open")?closeMenu():(navbar.classList.add("open"),document.body.classList.add("stop-scrolling"))}),links.forEach(e=>e.addEventListener("click",()=>closeMenu()));var nav=document.querySelector("nav");window.onscroll=(()=>{this.scrollY>100?nav.classList.add("sticky"):nav.classList.remove("sticky")});const button=document.getElementById("list"),btnbackground=document.getElementById("btnbackground");btnbackground.style.display="none",button.addEventListener("click",()=>{"none"==btnbackground.style.display?btnbackground.style.display="block":btnbackground.style.display="none"}),console.log("hello word");
+
+$(document).ready(function() {
+    $('[data-toggle="counter-up"]').counterUp({
+      delay:10,
+      time:1500
+    });
+
+  });

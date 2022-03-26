@@ -1,0 +1,173 @@
+
+
+.contact{
+    width: 100%;
+    background-color: $color-home-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative !important;
+
+   .img-contact{
+       
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+       img{
+           width: 100%;
+           margin-top: -11rem;
+           z-index: 2;
+       }
+   }
+   
+    .contact-h1{
+        text-align: center;
+        color: $color-white;
+        font-family: 'poppins',sans-serif;
+        font-size: 35px;
+        padding-top: 3rem;
+        margin-top: 0;
+    }
+    
+
+    .contact-form{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+     /* ff 3.6+ */
+     background:-moz-radial-gradient(circle at 50% 50%, rgba(153, 239, 208, 0.99) 0%, rgba(4, 13, 62, 1) 42%);
+
+     /* safari 5.1+,chrome 10+ */
+     background:-webkit-radial-gradient(circle at 50% 50%, rgba(153, 239, 208, 0.99) 0%, rgba(4, 13, 62, 1) 42%);
+ 
+     /* opera 11.10+ */
+     background:-o-radial-gradient(circle at 50% 50%, rgba(153, 239, 208, 0.99) 0%, rgba(4, 13, 62, 1) 42%);
+ 
+     /* ie 10+ */
+     background:-ms-radial-gradient(circle at 50% 50%, rgba(153, 239, 208, 0.99) 0%, rgba(4, 13, 62, 1) 42%);
+ 
+     /* global 92%+ browsers support */
+     background:radial-gradient(circle at 50% 50%, rgba(153, 239, 208, 0.99) 0%, rgba(4, 13, 62, 1) 42%);
+
+
+     .image{
+         position:absolute;
+         z-index: 2;
+         width: 100%;
+     }
+
+     .img-contact{
+        position: absolute;
+        bottom: -350px;
+        z-index: 2;
+     }
+
+    .background-form{
+      
+        background: #00031b33;
+        backdrop-filter: blur(20px);
+        height: 100%;
+        width: 500px;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 20px;
+
+
+        .form{
+            width: 100%;  
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .form-group{
+                width: 400px;
+                margin: 5 auto;
+            }
+
+            label{display: block; 
+                font-size: 15px; 
+                font-weight: 600;
+                margin: 10px 0;
+                color: $color-grey;
+                font-family: 'poppins',sans-serif;
+
+            }
+
+            #submit{
+                background-color: $color-green;
+                color:$color-home-2; 
+                border: none;
+                border-radius: 10px;
+                margin-top: 25px;
+                padding: 0px 40px;
+                height: 50px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold; 
+                cursor: pointer;
+                
+                }
+
+                
+
+            input:focus{
+                outline: 0;
+            }
+            textarea{
+                width: 100%; 
+                height: 150px; 
+                background: #fff; 
+                border: 1px solid #eee; 
+                padding: 20px; 
+                border-radius: 10px;
+            }
+    
+            textarea:focus{
+                outline: 0 !important;
+            }
+
+            input[type="text"]{
+                width: 100%; 
+                height: 50px; 
+                background: #fff; 
+                border: 1px solid #eee; 
+                font-family: 'poppins',sans-serif;
+                padding: 0 10px; 
+            }
+
+            input[type="number"]{
+                width: 100%; 
+                height: 50px; 
+                background: #fff; 
+                border: 1px solid #eee; 
+                font-family: 'poppins',sans-serif;
+                padding: 0 10px; 
+            }
+
+            input[type="Email"]{
+                width: 100%; 
+                height: 50px; 
+                background: #fff; 
+                border: 1px solid #eee; 
+                font-family: 'poppins',sans-serif;
+                padding: 0 10px; 
+            }
+
+            input{
+                border-radius: 10px;
+                
+            }
+        }
+      
+    }
+    }
+}
